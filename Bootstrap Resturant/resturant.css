@@ -1,0 +1,124 @@
+.boxone{
+    padding: 30px;
+}
+
+.navbar{
+    background-color: #222931;
+    text-align: center;
+}
+
+
+.boxtwo{
+    text-align: center;
+}
+
+.imgOne{
+    background-image: url('./Images/rice\ zoom.jpg');
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.menu{
+    margin-top: 50px;
+    margin-right: 80px;
+}
+
+
+.menuheader{
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.row-parent{
+    display: flex;
+    margin-top: 30px;
+}
+
+h2::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: yellow;
+    margin: 5px auto 0;
+}
+
+.imgTwo{
+    background-image: url('./Images/resturant.jpg');
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.about, .contact, .abouttext{
+    text-align: center;
+}
+
+.about{
+    background-color: antiquewhite;
+}
+
+.p-3{
+    border-radius: 50px;
+}
+
+.footer{
+    background-color: #222931;
+}
+
+.sectionone{
+    padding: 70px;
+}
+
+.about{
+    margin-top: 50px;
+}
+
+.send-button{
+    background-color: #F7BB07;
+    border-radius: 100px;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nametwo {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .row > div:last-child {
+    margin-left: auto;
+}
+
+.footer .row > div:last-child p {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding-right: 20px;
+}
+
+.footer .row > div:first-child {
+    color: white;
+}
+
+.fullmenu{
+    background-color: ;
+}
