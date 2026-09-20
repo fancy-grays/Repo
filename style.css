@@ -1,0 +1,45 @@
+.imgOne{
+    background-image: url('./Images/boutique.jpg');
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.boxone{
+    padding: 10rem;
+}
+
+.navbar-brand span{
+    color: #EF7165;
+}
+
+.navbar{
+    background-color: #232A33;
+}
+
+.head{
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 span{
+    color: #EF7165;
+}
+
+.footer{
+    background-color: #232A33;
+    margin-top: 40px;
+}
+
+.sectionone{
+    background-color: #E2D3CC;
+}
+
+.shop-btn, .sub{
+    background-color: #EF7165;
+    border-radius: 50px;
+}
+
+.text{
+    color: #EF7165;
+}
