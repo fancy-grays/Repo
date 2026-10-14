@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basic Plan</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      background: #f5f7fb;
+      color: #172033;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    .pricing-section {
+      display: grid;
+      place-items: center;
+      min-height: calc(100vh - 4rem);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 22rem));
+      justify-content: center;
+      width: 100%;
+      gap: 1.5rem;
+    }
+
+    .pricing-card {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      background: #fff;
+      border: 1px solid #e4e8f0;
+      border-radius: 1rem;
+      box-shadow: 0 12px 32px rgb(23 32 51 / 8%);
+    }
+
+    .pricing-card header {
+      margin-bottom: 1rem;
+    }
+
+    .plan-title {
+      margin: 0 0 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    .price {
+      margin: 0;
+      color: #16834a;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .price span {
+      color: #667085;
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin: 0 0 1.5rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .features li {
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #edf0f5;
+    }
+
+    .features li::before {
+      content: "✓";
+      margin-right: 0.6rem;
+      color: #16834a;
+      font-weight: 700;
+    }
+
+    .btn {
+      width: 100%;
+      margin-top: auto;
+      padding: 0.8rem 1rem;
+      border: 0;
+      border-radius: 0.6rem;
+      background: #2457d6;
+      color: #fff;
+      font: inherit;
+      font-weight: 650;
+      cursor: pointer;
+      transition: background-color 150ms ease, transform 150ms ease;
+    }
+
+    .btn:hover {
+      background: #1946b8;
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid #9bb7ff;
+      outline-offset: 3px;
+    }
+
+    .button-message {
+      min-height: 1.5em;
+      margin: 0.75rem 0 0;
+      color: #475467;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1rem;
+      }
+
+      .pricing-section {
+        min-height: calc(100vh - 2rem);
+      }
+
+      .pricing-card {
+        padding: 1.25rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="pricing-section">
+    <section class="pricing-grid" aria-label="Pricing plans">
+      <article class="pricing-card">
+        <header>
+          <h1 class="plan-title">Basic Plan</h1>
+          <p class="price">$9.99 <span>/ month</span></p>
+        </header>
+
+        <ul class="features">
+          <li>1 GB Storage</li>
+          <li>Basic Support</li>
+          <li>All Core Features</li>
+        </ul>
+
+        <button class="btn" id="trial-button" type="button">
+          Start Trial
+        </button>
+
+        <p class="button-message" id="button-message" role="status" aria-live="polite"></p>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const trialButton = document.querySelector("#trial-button");
+    const buttonMessage = document.querySelector("#button-message");
+
+    trialButton.addEventListener("click", () => {
+      buttonMessage.textContent =
+        "Trial signup isn’t connected yet. Connect this button to your signup flow to get started.";
+    });
+  </script>
+</body>
+</html>
